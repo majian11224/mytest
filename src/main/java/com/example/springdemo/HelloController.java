@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
+    private String name="张三";
     @RequestMapping(value = "/helllo", method = RequestMethod.GET)
     public String sayHello() {
-        return "你好！";
+        return  name+"你好！";
     }
 }
